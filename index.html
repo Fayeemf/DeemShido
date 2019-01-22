@@ -15,8 +15,13 @@
 
   gtag('config', 'UA-127758945-3');
   </script>
-
-
+<style> 
+  body {
+    background-image: url("img/lift.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  </style>
 </head>
 
 <body>
@@ -42,7 +47,7 @@
       </div> 
 
       <transition name="slide-fade">
-        <p class="status free" v-if="!pending.length" ><img src="images/beer_celebration.svg" alt="celebration">Time to chill!  You have no todos.</p> 
+        <p class="status free" v-if="!pending.length" ><img src="img/beer_celebration.svg" alt="celebration">Time to chill!</p> 
       </transition> 
 
       <div v-if="completed.length > 0 && showComplete">
